@@ -1,0 +1,21 @@
+.board {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+}
+
+.board > div {
+  border: 1px solid black;
+}
+
+.player1::after {
+  content: "O";
+}
+
+.player2::after {
+  content: "X";
+}
+
+.active {
+  text-decoration: underline;
+}
